@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>Football Statistics</title>
+</head>
+
+<body>
+  <h3>{{detail}}</h3>
+  <table border="1">
+    <tr>
+      <td>home team</td>
+      <td>home score</td>
+      <td>away score</td>
+      <td>away team</td>
+    </tr>
+    {% for row in data %}
+      <tr>
+        {% for item in row%}
+          <td>
+            {{item}}
+          </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </table>
+
+</body>
+
+</html>
